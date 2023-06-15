@@ -20,16 +20,16 @@ Note that ``pytorch >=1.10``.
 
 ```tex
 └── code-and-data
-    ├── cta_data_only10					# CDPSAMP10 Dataset
-    ├── ny_data_only10					# SLDSAMP10 Dataset
-    ├── ny_data_full_5min				# SLD_5min Dataset
-    ├── ny_data_full_15min			    # SLD_15min Dataset
-    ├── ny_data_full_60min			    # SLD_60min Dataset
-    ├── main_gau.py						# STG Model
-    ├── main_stnb.py				# STNB Model
-    ├── main_trunnorm.py			# STN Model
-    ├── main_zero_NB.py				    # STZINB Model
-    ├── main_tweedie.py				    # Tweedie Model (STTD, STP, STGM, STIG)
+    ├── cta_data_only10                 # CDPSAMP10 Dataset
+    ├── ny_data_only10                  # SLDSAMP10 Dataset
+    ├── ny_data_full_5min               # SLD_5min Dataset
+    ├── ny_data_full_15min              # SLD_15min Dataset
+    ├── ny_data_full_60min              # SLD_60min Dataset
+    ├── main_gau.py                     # STG Model
+    ├── main_stnb.py                    # STNB Model
+    ├── main_trunnorm.py                # STN Model
+    ├── main_zero_NB.py                 # STZINB Model
+    ├── main_tweedie.py                 # Tweedie Model (STTD, STP, STGM, STIG)
     ├── model.py				# The core source code of our model
     ├── utils.py				# Defination of auxiliary functions for running
     ├── STTD.yml      				    # The python environment needed for STTD
