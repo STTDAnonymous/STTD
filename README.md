@@ -30,8 +30,8 @@ Note that ``pytorch >=1.10``.
     ├── main_trunnorm.py				# STN Model
     ├── main_zero_NB.py				    # STZINB Model
     ├── main_tweedie.py				    # Tweedie Model (STTD, STP, STGM, STIG)
-    ├── model.py						# The core source code of our model
-    ├── utils.py						# Defination of auxiliary functions for running
+    ├── model.py					# The core source code of our model
+    ├── utils.py					# Defination of auxiliary functions for running
     ├── STTD.yml      				    # The python environment needed for STTD
     ├── pth								# Best model save path
     └── README.md 	   		            # This document
