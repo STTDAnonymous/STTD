@@ -30,11 +30,11 @@ Note that ``pytorch >=1.10``.
     ├── main_trunnorm.py                # STN Model
     ├── main_zero_NB.py                 # STZINB Model
     ├── main_tweedie.py                 # Tweedie Model (STTD, STP, STGM, STIG)
-    ├── model.py				# The core source code of our model
-    ├── utils.py				# Defination of auxiliary functions for running
-    ├── STTD.yml      				    # The python environment needed for STTD
-    ├── pth								# Best model save path
-    └── README.md 	   		            # This document
+    ├── model.py                        # The core source code of our model
+    ├── utils.py                        # Defination of auxiliary functions for running
+    ├── STTD.yml                        # The python environment needed for STTD
+    ├── pth                             # Best model save path
+    └── README.md                       # This document
 ```
 
 ## Datasets
@@ -46,10 +46,10 @@ Download datasets from [ZhuangDingyi/STZINB: Source code of implementing spatial
 Important parameters in the configuration are as follows :
 
 ```tex
-nhid = 42							# The hidden unit
-weight_dacay = 1e-4					# Weight decay
-learning_rate = 1e-3				# Learning rate
-drop_out = 0.2						# Dropout rate					 
+nhid = 42                               # The hidden unit
+weight_dacay = 1e-4                     # Weight decay
+learning_rate = 1e-3                    # Learning rate
+drop_out = 0.2                          # Dropout rate					 
 ```
 
 
