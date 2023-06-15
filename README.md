@@ -4,8 +4,6 @@ This is a Pytorch implementation of STTD: Uncertainty Quantification via Spatial
 
 More details of the paper and dataset will be released after it is published.
 
-[TOC]
-
 # The Code
 
 ## Requirements
