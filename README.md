@@ -23,18 +23,18 @@ Note that ``pytorch >=1.10``.
     ├── cta_data_only10					# CDPSAMP10 Dataset
     ├── ny_data_only10					# SLDSAMP10 Dataset
     ├── ny_data_full_5min				# SLD_5min Dataset
-    ├── ny_data_full_15min			# SLD_15min Dataset
-    ├── ny_data_full_60min			# SLD_60min Dataset
-    ├── main_gau.py							# STG Model
-    ├── main_stnb.py						# STNB Model
+    ├── ny_data_full_15min			    # SLD_15min Dataset
+    ├── ny_data_full_60min			    # SLD_60min Dataset
+    ├── main_gau.py						# STG Model
+    ├── main_stnb.py					# STNB Model
     ├── main_trunnorm.py				# STN Model
-    ├── main_zero_NB.py				  # STZINB Model
-    ├── main_tweedie.py				  # Tweedie Model (STTD, STP, STGM, STIG)
-    ├── model.py							  # The core source code of our model
-    ├── utils.py						   	# Defination of auxiliary functions for running
-    ├── STTD.yml      				  # The python environment needed for STTD
-    ├── pth											# Best model save path
-    └── README.md 	   		      # This document
+    ├── main_zero_NB.py				    # STZINB Model
+    ├── main_tweedie.py				    # Tweedie Model (STTD, STP, STGM, STIG)
+    ├── model.py						# The core source code of our model
+    ├── utils.py						# Defination of auxiliary functions for running
+    ├── STTD.yml      				    # The python environment needed for STTD
+    ├── pth								# Best model save path
+    └── README.md 	   		            # This document
 ```
 
 ## Datasets
@@ -46,10 +46,10 @@ Download datasets from [ZhuangDingyi/STZINB: Source code of implementing spatial
 Important parameters in the configuration are as follows :
 
 ```tex
-nhid = 42										# The hidden unit
+nhid = 42							# The hidden unit
 weight_dacay = 1e-4					# Weight decay
 learning_rate = 1e-3				# Learning rate
-drop_out = 0.2							# Dropout rate					 
+drop_out = 0.2						# Dropout rate					 
 ```
 
 
