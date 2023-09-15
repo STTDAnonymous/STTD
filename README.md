@@ -61,6 +61,7 @@ drop_out = 0.2                          # Dropout rate
 Run *python main_{method}.py* to train and evaluate the model and generate model prediction .Remember to replace the corresponding data files and output files.
 
 ## Citations
+```
 @misc{gao2023spatiotemporal,
       title={Spatiotemporal Graph Neural Networks with Uncertainty Quantification for Traffic Incident Risk Prediction}, 
       author={Xiaowei Gao and Xinke Jiang and Dingyi Zhuang and Huanfa Chen and Shenhao Wang and James Haworth},
@@ -87,7 +88,4 @@ Run *python main_{method}.py* to train and evaluate the model and generate model
       archivePrefix={arXiv},
       primaryClass={cs.LG}
 }
-
-
-
-
+```
