@@ -59,3 +59,35 @@ drop_out = 0.2                          # Dropout rate
 ##  Train and Test
 
 Run *python main_{method}.py* to train and evaluate the model and generate model prediction .Remember to replace the corresponding data files and output files.
+
+## Citations
+@misc{gao2023spatiotemporal,
+      title={Spatiotemporal Graph Neural Networks with Uncertainty Quantification for Traffic Incident Risk Prediction}, 
+      author={Xiaowei Gao and Xinke Jiang and Dingyi Zhuang and Huanfa Chen and Shenhao Wang and James Haworth},
+      year={2023},
+      eprint={2309.05072},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{gao2023uncertainty,
+      title={Uncertainty Quantification in the Road-level Traffic Risk Prediction by Spatial-Temporal Zero-Inflated Negative Binomial Graph Neural Network(STZINB-GNN)}, 
+      author={Xiaowei Gao and James Haworth and Dingyi Zhuang and Huanfa Chen and Xinke Jiang},
+      year={2023},
+      eprint={2307.13816},
+      archivePrefix={arXiv},
+      primaryClass={cs.CE}
+}
+
+@misc{jiang2023uncertainty,
+      title={Uncertainty Quantification via Spatial-Temporal Tweedie Model for Zero-inflated and Long-tail Travel Demand Prediction}, 
+      author={Xinke Jiang and Dingyi Zhuang and Xianghui Zhang and Hao Chen and Jiayuan Luo and Xiaowei Gao},
+      year={2023},
+      eprint={2306.09882},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+
+
+
