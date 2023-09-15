@@ -88,4 +88,12 @@ Run *python main_{method}.py* to train and evaluate the model and generate model
       archivePrefix={arXiv},
       primaryClass={cs.LG}
 }
+
+@inproceedings{zhuang2022uncertainty,
+  title={Uncertainty quantification of sparse travel demand prediction with spatial-temporal graph neural networks},
+  author={Zhuang, Dingyi and Wang, Shenhao and Koutsopoulos, Haris and Zhao, Jinhua},
+  booktitle={Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+  pages={4639--4647},
+  year={2022}
+}
 ```
