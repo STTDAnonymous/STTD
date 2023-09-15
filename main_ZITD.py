@@ -21,14 +21,8 @@ import os
 # Parameters
 torch.manual_seed(0)
 device = torch.device('cuda:3')
-A = np.load('/home/ChenHao/MGTN/MGTN_jxk/OTHERS/STZINB-main/ny_data_full_15min/adj_rand0.npy') # change the loading folder
-X = np.load('/home/ChenHao/MGTN/MGTN_jxk/OTHERS/STZINB-main/ny_data_full_15min/cta_samp_rand0.npy')
-
-# A = np.load('/home/ChenHao/MGTN/MGTN_jxk/OTHERS/STZINB-main/ny_data_only10/adj_only10_rand0.npy') # change the loading folder
-# X = np.load('/home/ChenHao/MGTN/MGTN_jxk/OTHERS/STZINB-main/ny_data_only10/cta_samp_only10_rand0.npy')
-#
-# A = np.load('/home/ChenHao/MGTN/MGTN_jxk/OTHERS/STZINB-main/cta_data_only10/adj_only10_rand0.npy') # change the loading folder
-# X = np.load('/home/ChenHao/MGTN/MGTN_jxk/OTHERS/STZINB-main/cta_data_only10/cta_samp_only10_rand0.npy')
+A = np.load('STZINB-main/ny_data_full_15min/adj_rand0.npy') # change the loading folder
+X = np.load('STZINB-main/ny_data_full_15min/cta_samp_rand0.npy')
 
 num_timesteps_output = 4
 num_timesteps_input = 4
@@ -143,7 +137,7 @@ for epoch in range(epochs):
         val_loss = nb_zitd_nll(val_target,n_val,p_val,pi_val,zi_val).to(device="cpu")
 
         pi_val = torch.clip(pi_val, -10, 4)
-        pi_val = torch.exp(pi_val)      # fixme
+        pi_val = torch.exp(pi_val)    
 
         print('Distribution_val,mean,min,max',torch.mean(pi_val),torch.min(pi_val),torch.max(pi_val))
         print('Pi_val,mean,min,max',torch.mean(pi_val),torch.min(pi_val),torch.max(pi_val))
@@ -222,7 +216,6 @@ for epoch in range(epochs):
                 mape = np.mean(
                     np.abs((test_pred_all[:, :, horizon] - test_target[:, :, horizon].detach().cpu().numpy()) / (
                             test_target[:, :, horizon].detach().cpu().numpy() + 1e-5)))
-                # fixme 没有mae，rmse，mape这些情况
                 mae_list.append(mae)
                 rmse_list.append(rmse)
                 mape_list.append(mape)
