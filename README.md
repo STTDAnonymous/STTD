@@ -1,8 +1,7 @@
-This is a Pytorch implementation of STTD: Uncertainty Quantification via Spatial-Temporal Tweedie Model for Zero-inflated and Long-tail Travel Demand Prediction
-
-# Uncertainty Quantification via Spatial-Temporal Tweedie Model for Zero-inflated and Long-tail Travel Demand Prediction
-
-More details of the paper and dataset will be released after it is published.
+This is a Pytorch implementation of the three paper: 
+[1] Uncertainty Quantification of Sparse Travel Demand Prediction with Spatial-Temporal Graph Neural Networks
+[2] STTD: Uncertainty Quantification via Spatial-Temporal Tweedie Model for Zero-inflated and Long-tail Travel Demand Prediction
+[3] Spatiotemporal Graph Neural Networks with Uncertainty Quantification for Traffic Incident Risk Prediction
 
 # The Code
 
@@ -28,6 +27,7 @@ Note that ``pytorch >=1.10``.
     ├── main_trunnorm.py                # STN Model
     ├── main_zero_NB.py                 # STZINB Model
     ├── main_tweedie.py                 # Tweedie Model (STTD, STP, STGM, STIG)
+    ├── main_zitd.py                 # Tweedie Model (STTD, STP, STGM, STIG)    
     ├── model.py                        # The core source code of our model
     ├── utils.py                        # Defination of auxiliary functions for running
     ├── STTD.yml                        # The python environment needed for STTD
@@ -38,6 +38,8 @@ Note that ``pytorch >=1.10``.
 ## Datasets
 
 Download datasets from [ZhuangDingyi/STZINB: Source code of implementing spatial-temporal zero-inflated negative binomial network for trip demand prediction (github.com)](https://github.com/ZhuangDingyi/STZINB)
+
+For London traffic risk dataset, please contact us for more details. 
 
 ## Configuration
 
