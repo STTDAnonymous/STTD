@@ -1,10 +1,7 @@
-This is a Pytorch implementation of the four paper: 
+This is a Pytorch implementation of the following paper: 
 
 # Papers
-#### [1] Uncertainty Quantification of Sparse Travel Demand Prediction with Spatial-Temporal Graph Neural Networks
-#### [2] STTD: Uncertainty Quantification via Spatial-Temporal Tweedie Model for Zero-inflated and Long-tail Travel Demand Prediction
-#### [3] Spatiotemporal Graph Neural Networks with Uncertainty Quantification for Traffic Incident Risk Prediction
-#### [4] Uncertainty Quantification in the Road-level Traffic Risk Prediction by Spatial-Temporal Zero-Inflated Negative Binomial Graph Neural Network(STZINB-GNN)
+#### [🧩] Spatiotemporal Graph Neural Networks with Uncertainty Quantification for Traffic Incident Risk Prediction
 
 # The Code
 
@@ -20,11 +17,11 @@ Note that ``pytorch >=1.10``.
 
 ```tex
 └── code-and-data
-    ├── cta_data_only10                 # CDPSAMP10 Dataset
-    ├── ny_data_only10                  # SLDSAMP10 Dataset
-    ├── ny_data_full_5min               # SLD_5min Dataset
-    ├── ny_data_full_15min              # SLD_15min Dataset
-    ├── ny_data_full_60min              # SLD_60min Dataset
+    ├── cta_data_only10                 # CDPSAMP10 Dataset as an example
+    ├── ny_data_only10                  # SLDSAMP10 Dataset as an example
+    ├── ny_data_full_5min               # SLD_5min Dataset as an example
+    ├── ny_data_full_15min              # SLD_15min Dataset as an example
+    ├── ny_data_full_60min              # SLD_60min Dataset as an example
     ├── main_gau.py                     # STG Model
     ├── main_stnb.py                    # STNB Model
     ├── main_trunnorm.py                # STN Model
@@ -60,40 +57,3 @@ drop_out = 0.2                          # Dropout rate
 
 Run *python main_{method}.py* to train and evaluate the model and generate model prediction .Remember to replace the corresponding data files and output files.
 
-## Citations
-```
-@misc{gao2023spatiotemporal,
-      title={Spatiotemporal Graph Neural Networks with Uncertainty Quantification for Traffic Incident Risk Prediction}, 
-      author={Xiaowei Gao and Xinke Jiang and Dingyi Zhuang and Huanfa Chen and Shenhao Wang and James Haworth},
-      year={2023},
-      eprint={2309.05072},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
-}
-
-@misc{gao2023uncertainty,
-      title={Uncertainty Quantification in the Road-level Traffic Risk Prediction by Spatial-Temporal Zero-Inflated Negative Binomial Graph Neural Network(STZINB-GNN)}, 
-      author={Xiaowei Gao and James Haworth and Dingyi Zhuang and Huanfa Chen and Xinke Jiang},
-      year={2023},
-      eprint={2307.13816},
-      archivePrefix={arXiv},
-      primaryClass={cs.CE}
-}
-
-@misc{jiang2023uncertainty,
-      title={Uncertainty Quantification via Spatial-Temporal Tweedie Model for Zero-inflated and Long-tail Travel Demand Prediction}, 
-      author={Xinke Jiang and Dingyi Zhuang and Xianghui Zhang and Hao Chen and Jiayuan Luo and Xiaowei Gao},
-      year={2023},
-      eprint={2306.09882},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
-}
-
-@inproceedings{zhuang2022uncertainty,
-  title={Uncertainty quantification of sparse travel demand prediction with spatial-temporal graph neural networks},
-  author={Zhuang, Dingyi and Wang, Shenhao and Koutsopoulos, Haris and Zhao, Jinhua},
-  booktitle={Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
-  pages={4639--4647},
-  year={2022}
-}
-```
